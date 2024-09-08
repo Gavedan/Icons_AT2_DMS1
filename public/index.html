@@ -16,26 +16,31 @@
 
 <body style="background-color: #FF474C;">
     <div class="row">
-        <div class="image-container"><img id="cir" src="img/cir.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="tri" src="img/tri.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="squ" src="img/teddy.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="leo" src="img/leo.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="tau" src="img/tau.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="cap" src="img/cap.png" height="200" width="200"/></div>
     </div>
 
     <div class="row">
-        <div class="image-container"><img src="img/hex.png" height="200" width="200"/></div>
-        <div class="image-container"><img src="img/rec.png" height="200" width="200"/></div>
-        <div class="image-container"><img src="img/sta.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="air" src="img/air.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="tel" src="img/tel.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="pis" src="img/pis.png" height="200" width="200"/></div>
         </div>
 
     <div class="row">
-        <div class="image-container"><img src="img/trr.png" height="200" width="200"/></div>
-        <div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div>
-        <div class="image-container"><img src="img/her.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="lib" src="img/lib.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="aq" src="img/aq.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="gem"src="img/gem.png" height="200" width="200"/></div>
     </div>
 </body>
 
+
 <script>
-    const cir = document.getElementById ('cir')
-    const cir_audio = new Audio ('audio/a1_01.mp3')
-    cir.onpointerdown = () => cir_audio.play () 
+    const leo = document.getElementById ('leo')
+    const leo = new Audio ('audio/a1_01.mp3')
+    leo.onpointerdown = () => {
+        leo_audio.play ()
+        leo.src = 'img/leo2.png'
+        setTimeout (() => leo.src = 'img/leo2.png', 1000)
+    }
 </script>
